@@ -1,0 +1,22 @@
+[project]
+name = "video-transfer-labs"
+version = "0.1.0"
+description = "Лабораторные работы по передаче видео и изображений по Ethernet и LoRa"
+readme = "README.md"
+authors = [
+    { name = "Sergey", email = "vasilevsergei995@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+lab2-sender = "labs.lab2.sender:main"
+lab2-receiver = "labs.lab2.receiver:main"
+lab2-filecheck = "labs.lab2.filecheck:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "labs"

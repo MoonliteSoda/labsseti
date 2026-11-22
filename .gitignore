@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Local environment and IDE settings
+.venv/
+.idea/
+
+# Local captures, generated video and received output
+*.pcap
+*.pcapng
+received.h264
+restored.bin
